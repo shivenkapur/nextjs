@@ -1,7 +1,17 @@
+import React from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  React.useEffect(() => {
+    var body = document.body,
+    html = document.documentElement;
+
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+              
+    parent.postMessage(body.scrollHeight, "https://evercare.multiscreensite.com")
+  })
   return (
     <div className={styles.container}>
       <Head>
